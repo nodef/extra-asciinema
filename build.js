@@ -71,7 +71,8 @@ function nodeIsAssignment(ast) {
 // Check if node is require().
 function nodeIsRequire(ast) {
   if(ast.type!=='CallExpression') return false;
-  return ast.callee.name==='require';
+  var {name} = ast.callee, {value} = ast.arguments[0]||{};
+  return name==='require' && value.startsWith('.');
 };
 
 // Check if node is exports.

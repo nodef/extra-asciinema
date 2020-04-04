@@ -1,6 +1,6 @@
 {
   "name": "extra-asciinema",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
   "scripts": {
@@ -12,12 +12,26 @@
   },
   "keywords": [
     "extra",
-    "asciinema"
+    "asciinema",
+    "cat",
+    "catSync",
+    "rec",
+    "recSync",
+    "retime",
+    "retimeData",
+    "retimeSync",
+    "upload",
+    "uploadSync"
   ],
   "author": "wolfram77@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nodef/extra-asciinema/issues"
   },
-  "homepage": "https://github.com/nodef/extra-asciinema#readme"
+  "homepage": "https://github.com/nodef/extra-asciinema#readme",
+  "devDependencies": {
+    "find-npm-prefix": "^1.0.2",
+    "recast": "^0.18.8",
+    "tempy": "^0.5.0"
+  }
 }
