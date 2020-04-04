@@ -1,0 +1,23 @@
+{
+  "name": "extra-asciinema",
+  "version": "0.0.1",
+  "description": "asciinema is a terminal screen recorder.",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-asciinema.git"
+  },
+  "keywords": [
+    "extra",
+    "asciinema"
+  ],
+  "author": "wolfram77@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nodef/extra-asciinema/issues"
+  },
+  "homepage": "https://github.com/nodef/extra-asciinema#readme"
+}
