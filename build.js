@@ -312,8 +312,12 @@ function getJsdoc(js) {
   var description = c.match(/\s+\*\s+(.*?)\n/)[1];
   var rparam = /\s+\*\s+@param\s+(?:\{(.*?)\}\s+)(.*?)\s+(.*?)\n/g;
   var params = new Map(), m = null;
-  while((m=rparam.exec(c))!=null)
+  while((m=rparam.exec(c))!=null) {
     params.set(m[2], {type: m[1], description: m[3]});
+    if(!m[2].includes('.')) continue;
+    var k = m[2].replace(/\..*/, '');
+    params.get(k).type += '?';
+  }
   var rreturns = /\s+\*\s+@returns\s+(?:\{(.*?)\}\s+)(.*?)\n/;
   m = rreturns.exec(c);
   var returns = m? {type: m[1], description: m[2]}:null;
@@ -325,7 +329,7 @@ function getJsdoc(js) {
 // Sets wiki from JSDoc.
 function setWiki(md, o) {
   var pre = Math.max(...[...o.params.keys()].map(v => v.length));
-  var args = [...o.params].map(([k, v]) => v.type.startsWith('...')? `...${k}`:(v.type.endsWith('?')? `[${k}]`:k));
+  var args = [...o.params].filter(([k]) => k.indexOf('.')<0).map(([k, v]) => v.type.startsWith('...')? `...${k}`:(v.type.endsWith('?')? `[${k}]`:k));
   var pars = [...o.params].map(([k, v]) => `// ${(k.replace(/.*?\./, '.')+':').padEnd(pre+2)}${v.description}`);
   var def =
     '```javascript\n'+
