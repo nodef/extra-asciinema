@@ -326,7 +326,7 @@ function getJsdoc(js) {
 function setWiki(md, o) {
   var pre = Math.max(...[...o.params.keys()].map(v => v.length));
   var args = [...o.params].map(([k, v]) => v.type.startsWith('...')? `...${k}`:(v.type.endsWith('?')? `[${k}]`:k));
-  var pars = [...o.params].map(([k, v]) => `// ${(k+':').padEnd(pre+2)}${v.description}`);
+  var pars = [...o.params].map(([k, v]) => `// ${(k.replace(/.*?\./, '.')+':').padEnd(pre+2)}${v.description}`);
   var def =
     '```javascript\n'+
     `${o.package}.${o.name}(`+args.join(', ')+`);\n`+
