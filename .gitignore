@@ -1,3 +1,6 @@
+# Terminal recordings
+*.cast
+
 # Logs
 logs
 *.log
