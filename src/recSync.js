@@ -9,6 +9,13 @@ const path = require('path');
  * @param {string?} f output filename
  * @param {object} o options
  * @param {string?} o.input input javascript file
+ * @param {boolean?} o.append append to file (false)
+ * @param {boolean?} o.raw save in raw format (false)
+ * @param {boolean?} o.overwrite overwrite existing file (true)
+ * @param {string?} o.command command to record (cat ${input} | node -i)
+ * @param {string?} o.env environment variables
+ * @param {string?} o.title file title 
+ * @param {number?} o.idleTimeLimit maximum idle tile
  * @returns {string} asciicast file
  */
 function recSync(f, o) {
@@ -17,21 +24,3 @@ function recSync(f, o) {
   return f;
 }
 module.exports = recSync;
-/*
-  if(o.input) o.command = `cat "${o.input}" | node -i`;
-  o.overwrite = true;
-  o.yes = true;
-  var cmd = 'asciinema rec';
-  if(f) cmd += ` "${f}"`;
-  if(o.stdin) cmd += ' --stdin';
-  if(o.append) cmd += ' --append';
-  if(o.raw) cmd += ' --raw';
-  if(o.overwrite) cmd += ' --overwrite';
-  if(o.command) cmd += ` -c "${o.command}"`;
-  if(o.env) cmd += ` -e "${o.env}"`;
-  if(o.title) cmd += ` -t "${o.title}"`;
-  if(o.idleTimeLimit) cmd += ` -e "${o.idleTimeLimit}"`;
-  if(o.yes) cmd += ` -e "${o.yes}"`;
-  if(o.quiet) cmd += ` -e "${o.quiet}"`;
-
-*/
