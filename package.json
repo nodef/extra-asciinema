@@ -1,6 +1,6 @@
 {
   "name": "extra-asciinema",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
   "scripts": {
