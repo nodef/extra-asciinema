@@ -11,11 +11,10 @@ const fs = require('fs');
  * @param {number?} o.outputRate output rate (0.1s)
  * @param {number?} o.outputDelay output delay (0.1s)
  * @param {number?} o.delay initial delay (0s)
- * @returns {Promise}
  */
-async function retime(f, o) {
-  var d = await fs.promises.readFile(f, 'utf8');
+function retimeSync(f, o) {
+  var d = fs.readFileSync(f, 'utf8');
   d = retimeData(d, o);
-  await fs.promises.writeFile(f, d);
+  fs.writeFileSync(f, d);
 }
-module.exports = retime;
+module.exports = retimeSync;
