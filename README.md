@@ -40,7 +40,7 @@ asciinema.uploadSync('saved.cast');
 [rollup]: https://www.npmjs.com/package/rollup
 [uglify-js]: https://www.npmjs.com/package/uglify-js
 [extra-asciinema.min]: https://www.npmjs.com/package/extra-asciinema.min
-[rec]: https://github.com/nodef/asciinema/wiki/rec
-[cat]: https://github.com/nodef/asciinema/wiki/cat
-[retime]: https://github.com/nodef/asciinema/wiki/retime
-[upload]: https://github.com/nodef/asciinema/wiki/upload
+[rec]: https://github.com/nodef/extra-asciinema/wiki/rec
+[cat]: https://github.com/nodef/extra-asciinema/wiki/cat
+[retime]: https://github.com/nodef/extra-asciinema/wiki/retime
+[upload]: https://github.com/nodef/extra-asciinema/wiki/upload
