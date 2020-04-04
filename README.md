@@ -3,6 +3,8 @@ asciinema is a terminal screen recorder.
 With this package you can **auto-generate** terminal recordings
 for Node.js examples through **asciinema** *programmatically*.
 
+> Stability: Experimental.
+
 ```javascript
 const asciinema = require('extra-asciinema');
 
