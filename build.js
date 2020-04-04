@@ -329,7 +329,7 @@ function setWiki(md, o) {
   var pars = [...o.params].map(([k, v]) => `// ${(k.replace(/.*?\./, '.')+':').padEnd(pre+2)}${v.description}`);
   var def =
     '```javascript\n'+
-    `${o.package}.${o.name}(`+args.join(', ')+`);\n`+
+    `${o.rootname}.${o.name}(`+args.join(', ')+`);\n`+
     pars.join('\n')+'\n'+
     (o.returns? `// --> `+o.returns.description+'\n':'')+
     '```\n';
@@ -425,8 +425,10 @@ function setKeywords(os) {
 
 // Run on shell.
 async function main() {
-  var pkg = path.basename(__dirname);
-  var ot = {org: 'nodef', package: pkg.replace(/.*?-/, '')};
+  var org = 'nodef';
+  var package = path.basename(__dirname);
+  var rootname = package.replace(/.*?-/, '');
+  var ot = {org, package, rootname};
   await bundleMain();
   var os = getJsdocs('src');
   setWikis('wiki', os, ot);
