@@ -1,7 +1,13 @@
+const path = require('path');
+
 function recCmd(f, o) {
   var o = o||{};
   // if input file given, execute on node.js
-  if(o.input) o.command = `cat "${o.input}" | node -i`;
+  if(o.input) {
+    var dir = path.dirname(o.input);
+    var fil = path.basename(o.input);
+    o.command = `cd ${dir} && cat "${fil}" | node -i`;
+  }
   o.overwrite = true;
   o.yes = true;
   var cmd = 'asciinema rec';

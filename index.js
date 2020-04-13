@@ -25,10 +25,16 @@ const cp1 = require('child_process');
 function catSync(f) {
   return cp1.execSync(`asciinema cat ${f}`, {encoding: 'utf8'});
 }
+const path = require('path');
+
 function recCmd(f, o) {
   var o = o||{};
   // if input file given, execute on node.js
-  if(o.input) o.command = `cat "${o.input}" | node -i`;
+  if(o.input) {
+    var dir = path.dirname(o.input);
+    var fil = path.basename(o.input);
+    o.command = `cd ${dir} && cat "${fil}" | node -i`;
+  }
   o.overwrite = true;
   o.yes = true;
   var cmd = 'asciinema rec';
@@ -48,7 +54,7 @@ function recCmd(f, o) {
 const cp3 = require('child_process');
 const fs = require('fs');
 const os = require('os');
-const path = require('path');
+const path3 = require('path');
 
 /**
  * Record terminal session.
@@ -66,7 +72,7 @@ const path = require('path');
  * @returns {string} asciicast file
  */
 function rec(f, o, fn=null) {
-  var f = f||path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'asciinema-')), '0.cast');
+  var f = f||path3.join(fs.mkdtempSync(path3.join(os.tmpdir(), 'asciinema-')), '0.cast');
   var p = new Promise((fres, frej) => {
     cp3.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {
       if(err) return frej(err);
