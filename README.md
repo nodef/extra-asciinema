@@ -1,4 +1,4 @@
-[asciinema] is a terminal screen recorder.
+[asciinema] is a terminal screen recorder. [:running:] [:package:] [:moon:] [:ledger:]
 
 With this package you can **auto-generate** terminal recordings
 for Node.js examples through **asciinema** *programmatically*.
@@ -44,3 +44,7 @@ asciinema.uploadSync('saved.cast');
 [cat]: https://github.com/nodef/extra-asciinema/wiki/cat
 [retime]: https://github.com/nodef/extra-asciinema/wiki/retime
 [upload]: https://github.com/nodef/extra-asciinema/wiki/upload
+[:running:]: https://npm.runkit.com/extra-asciinema
+[:package:]: https://www.npmjs.com/package/extra-asciinema
+[:moon:]: https://www.npmjs.com/package/extra-asciinema.min
+[:ledger:]: https://unpkg.com/extra-asciinema/
