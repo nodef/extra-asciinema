@@ -9,6 +9,14 @@ import type {RecOptions} from './_types';
  * Record terminal session.
  * @param f output filename
  * @param o options
+ * @param o.input input javascript file
+ * @param o.append append to file (false)
+ * @param o.raw save in raw format (false)
+ * @param o.overwrite overwrite existing file (true)
+ * @param o.command command to record (cat ${input} | node -i)
+ * @param o.env environment variables
+ * @param o.title file title 
+ * @param o.idleTimeLimit maximum idle tile
  * @returns asciicast file
  */
 function recSync(f: string, o: RecOptions=null): string {
