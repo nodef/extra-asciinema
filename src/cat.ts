@@ -1,12 +1,13 @@
-const cp = require('child_process');
+import * as cp from 'child_process';
+import type {callbackFn} from './_types';
 
 /**
  * Print full output of recorded asciicast to a terminal.
- * @param {string} f filename
- * @param {function?} fn callback (err, full output)
- * @returns {Promise<string>} full output (including all escape sequences)
+ * @param f filename
+ * @param fn callback (err, full output)
+ * @returns full output (including all escape sequences)
  */
-function cat(f, fn=null) {
+function cat(f: string, fn: callbackFn=null): Promise<any> {
   var p = new Promise((fres, frej) => {
     cp.exec(`asciinema cat ${f}`, {encoding: 'utf8'}, (err, stdout) => {
       if(err) return frej(err);

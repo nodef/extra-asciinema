@@ -1,12 +1,12 @@
-const cp = require('child_process');
+import * as cp from 'child_process';
 
 /**
  * Upload recorded asciicast to asciinema.org site.
- * @param {string} f filename
- * @returns {string} asciicast URL
+ * @param f filename
+ * @returns asciicast URL
  */
-function uploadSync(f) {
+function uploadSync(f: string): string {
   var stdout = cp.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});
   return stdout.replace(/.*?(https?:\S+).*/s, '$1');
 }
-module.exports = uploadSync;
+export default uploadSync;

@@ -1,12 +1,13 @@
-const cp = require('child_process');
+import * as cp from 'child_process';
+import type {callbackFn} from './_types';
 
 /**
  * Upload recorded asciicast to asciinema.org site.
- * @param {string} f filename
- * @param {function?} fn callback (err, asciicast URL)
- * @returns {Promise<string>} asciicast URL
+ * @param f filename
+ * @param fn callback (err, asciicast URL)
+ * @returns asciicast URL (promise)
  */
-function upload(f, fn=null) {
+function upload(f: string, fn: callbackFn=null): Promise<any> {
   var p = new Promise((fres, frej) => {
     cp.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {
       if(err) return frej(err);

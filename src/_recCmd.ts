@@ -1,6 +1,6 @@
-const path = require('path');
+import * as path from 'path';
 
-function recCmd(f, o) {
+function recCmd(f: string, o: any=null): string {
   var o = o||{};
   // if input file given, execute on node.js
   if(o.input) {
@@ -24,4 +24,4 @@ function recCmd(f, o) {
   if(o.quiet) cmd += ` -e "${o.quiet}"`;
   return cmd;
 }
-module.exports = recCmd;
+export default recCmd;

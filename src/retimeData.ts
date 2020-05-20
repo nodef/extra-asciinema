@@ -1,16 +1,12 @@
+import type {RetimeOptions} from './_types';
+
 /**
  * Updates time in asciicast data.
- * @param {string} d asciicast data
- * @param {object} o options
- * @param {string?} o.input input text
- * @param {number?} o.inputRate input rate (0.1s)
- * @param {number?} o.inputDelay input delay (1s)
- * @param {number?} o.outputRate output rate (0.1s)
- * @param {number?} o.outputDelay output delay (0.1s)
- * @param {number?} o.delay initial delay (0s)
- * @returns {string} updated asciicast data
+ * @param d asciicast data
+ * @param o options
+ * @returns updated asciicast data
  */
-function retimeData(d, o) {
+function retimeData(d: string, o: RetimeOptions=null): string {
   var o = o||{};
   var {input} = o, i = 0;
   var output = '', t = o.delay||0;
@@ -42,4 +38,4 @@ function retimeData(d, o) {
   }
   return output;
 }
-module.exports = retimeData;
+export default retimeData;
