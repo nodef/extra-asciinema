@@ -16,4 +16,4 @@ function upload(f: string, fn: callbackFn=null): Promise<any> {
   });
   return fn? p.then(a => fn(null, a), fn) : p;
 }
-module.exports = upload;
+export default upload;

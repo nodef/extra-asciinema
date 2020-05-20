@@ -16,4 +16,4 @@ function cat(f: string, fn: callbackFn=null): Promise<any> {
   });
   return fn? p.then(a => fn(null, a), fn) : p;
 }
-module.exports = cat;
+export default cat;

@@ -22,4 +22,4 @@ function rec(f: string=null, o: RecOptions=null, fn: callbackFn=null): Promise<a
   });
   return p? p.then(a => fn(null, a), fn) : p;
 }
-module.exports = rec;
+export default rec;

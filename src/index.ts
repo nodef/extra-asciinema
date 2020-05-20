@@ -1,9 +1,9 @@
-exports.cat = require('./cat');
-exports.catSync = require('./catSync');
-exports.rec = require('./rec');
-exports.recSync = require('./recSync');
-exports.retime = require('./retime');
-exports.retimeData = require('./retimeData');
-exports.retimeSync = require('./retimeSync');
-exports.upload = require('./upload');
-exports.uploadSync = require('./uploadSync');
+export {default as cat} from './cat';
+export {default as catSync} from './catSync';
+export {default as rec} from './rec';
+export {default as recSync} from './recSync';
+export {default as retime} from './retime';
+export {default as retimeData} from './retimeData';
+export {default as retimeSync} from './retimeSync';
+export {default as upload} from './upload';
+export {default as uploadSync} from './uploadSync';
