@@ -9,6 +9,7 @@ bundling tools, like [browserify], [rollup], [uglify-js].
 
 ```javascript
 const asciinema = require('extra-asciinema');
+// import * as asciinema from 'extra-asciinema';
 
 asciinema.recSync('saved.cast', {input: 'example.js'});
 // runs example.js interactively in node.js, saves "saved.cast"
