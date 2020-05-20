@@ -34,8 +34,6 @@ asciinema.uploadSync('saved.cast');
 
 [![nodef](https://merferry.glitch.me/card/extra-asciinema.svg)](https://nodef.github.io)
 
-> Browserified, minified version of this package is [extra-asciinema.min].
-
 [asciinema]: https://asciinema.org
 [browserify]: https://www.npmjs.com/package/browserify
 [rollup]: https://www.npmjs.com/package/rollup
