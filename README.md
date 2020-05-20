@@ -1,11 +1,12 @@
 [asciinema] is a terminal screen recorder. [:running:] [:package:] [:moon:] [:ledger:]
 
+With this package you can **auto-generate** terminal recordings
+for Node.js examples through **asciinema** *programmatically*.
+But you need to [install asciinema first]!
+
 Methods as separate packages:
 - `@extra-asciinema/rec`: use [rollup] to bundle this es module.
 - `@extra-asciinema/rec.min`: use in browser ([browserify], [uglify-js]).
-
-With this package you can **auto-generate** terminal recordings
-for Node.js examples through **asciinema** *programmatically*.
 
 > Stability: Experimental.
 
@@ -40,7 +41,7 @@ asciinema.uploadSync('saved.cast');
 [browserify]: https://www.npmjs.com/package/browserify
 [rollup]: https://www.npmjs.com/package/rollup
 [uglify-js]: https://www.npmjs.com/package/uglify-js
-[extra-asciinema.min]: https://www.npmjs.com/package/extra-asciinema.min
+[install asciinema first]: https://asciinema.org/docs/installation
 [rec]: https://github.com/nodef/extra-asciinema/wiki/rec
 [cat]: https://github.com/nodef/extra-asciinema/wiki/cat
 [retime]: https://github.com/nodef/extra-asciinema/wiki/retime
