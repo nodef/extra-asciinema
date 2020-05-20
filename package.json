@@ -1,6 +1,6 @@
 {
   "name": "extra-asciinema",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "escatter": "ebuild scatter",
     "test": "exit"
   },
+  "runkitExampleFilename": "example.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nodef/extra-asciinema.git"
