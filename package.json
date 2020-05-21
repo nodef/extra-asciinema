@@ -1,8 +1,13 @@
 {
   "name": "extra-asciinema",
-  "version": "1.0.20",
+  "version": "1.0.21",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    "require": "./index.js",
+    "import": "./index.mjs"
+  },
   "scripts": {
     "einit": "ebuild init",
     "ecode": "ebuild update --docs false",
