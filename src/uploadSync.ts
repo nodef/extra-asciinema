@@ -6,7 +6,7 @@ import * as cp from 'child_process';
  * @returns asciicast URL
  */
 function uploadSync(f: string): string {
-  var stdout = cp.execSync(`asciinema upload ${f}`, {encoding: 'utf8'});
+  var stdout = cp.execFileSync('asciinema', ['upload', f], {encoding: 'utf8'});
   return stdout.replace(/.*?(https?:\S+).*/s, '$1');
 }
 export default uploadSync;

@@ -23,7 +23,7 @@ import type {RecOptions, callbackFn} from './_types';
 function rec(f: string=null, o: RecOptions=null, fn: callbackFn=null): Promise<any> {
   var f = f||path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'asciinema-')), '0.cast');
   var p = new Promise((fres, frej) => {
-    cp.exec(recCmd(f, o), {encoding: 'utf8'}, (err) => {
+    cp.execFile('asciinema', recCmd(f, o), {encoding: 'utf8'}, (err) => {
       if(err) return frej(err);
       fres(f);
     });

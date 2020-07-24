@@ -9,7 +9,7 @@ import type {callbackFn} from './_types';
  */
 function upload(f: string, fn: callbackFn=null): Promise<any> {
   var p = new Promise((fres, frej) => {
-    cp.exec(`asciinema upload ${f}`, {encoding: 'utf8'}, (err, stdout) => {
+    cp.execFile('asciinema', ['upload', f], {encoding: 'utf8'}, (err, stdout) => {
       if(err) return frej(err);
       fres(stdout.replace(/.*?(https?:\S+).*/s, '$1'));      
     });

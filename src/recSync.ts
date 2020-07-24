@@ -21,7 +21,7 @@ import type {RecOptions} from './_types';
  */
 function recSync(f: string, o: RecOptions=null): string {
   var f = f||path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'asciinema-')), '0.cast');
-  cp.execSync(recCmd(f, o), {encoding: 'utf8'});
+  cp.execFileSync('asciinema', recCmd(f, o), {encoding: 'utf8'});
   return f;
 }
 export default recSync;
