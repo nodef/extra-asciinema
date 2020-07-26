@@ -28,6 +28,6 @@ function rec(f: string=null, o: RecOptions=null, fn: callbackFn=null): Promise<a
       fres(f);
     });
   });
-  return p? p.then(a => fn(null, a), fn) : p;
+  return fn? p.then(a => fn(null, a), fn) : p;
 }
 export default rec;
