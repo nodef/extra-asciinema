@@ -1,6 +1,6 @@
 {
   "name": "extra-asciinema",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
   "module": "index.mjs",
@@ -40,6 +40,6 @@
   },
   "homepage": "https://github.com/nodef/extra-asciinema#readme",
   "devDependencies": {
-    "extra-build": "^1.0.154"
+    "extra-build": "^1.1.26"
   }
 }
