@@ -11,7 +11,7 @@ function recCmd(f: string, o: any=null): string[] {
     var pth = escapePath(o.input);
     var dir = path.dirname(pth);
     var fil = path.basename(pth);
-    o.command = `cd ${dir} && cat "${fil}" | node -i`;
+    o.command = `cd "${dir}" && cat "${fil}" | node -i`;
   }
   o.overwrite = true;
   o.yes = true;
