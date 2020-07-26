@@ -1,11 +1,16 @@
 import * as path from 'path';
 
+function escapePath(p) {
+  return p.replace(/[`$&{}[;|]/g, '');
+}
+
 function recCmd(f: string, o: any=null): string[] {
   var o = o||{};
   // if input file given, execute on node.js
   if(o.input) {
-    var dir = path.dirname(o.input);
-    var fil = path.basename(o.input);
+    var pth = escapePath(o.input);
+    var dir = path.dirname(pth);
+    var fil = path.basename(pth);
     o.command = `cd ${dir} && cat "${fil}" | node -i`;
   }
   o.overwrite = true;
