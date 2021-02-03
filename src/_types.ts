@@ -1,35 +1,35 @@
 export type callbackFn = (err: any, ans?: any) => void;
 
 export interface RecOptions {
-  /** input javascript file. */
+  /** Input javascript file. */
   input?: string,
-  /** append to file? (false) */
+  /** Append to file? (false) */
   append?: boolean,
-  /** save in raw format? (false) */
+  /** Save in raw format? (false) */
   raw?: boolean,
-  /** overwrite existing file? (true) */
+  /** Overwrite existing file? (true) */
   overwrite?: boolean,
-  /** command to record. (cat ${input} | node -i) */
+  /** Command to record. (cat ${input} | node -i) */
   command?: string,
-  /** environment variables. */
+  /** Environment variables. */
   env?: string,
-  /** file title. */
+  /** File title. */
   title?: string,
-  /** maximum idle tile. */
+  /** Maximum idle tile. */
   idleTimeLimit?: number
 };
 
 export interface RetimeOptions {
-  /** input text. */
+  /** Input text. */
   input?: string,
-  /** input rate. (0.1s) */
+  /** Input rate. (0.1s) */
   inputRate?: number,
-  /** input delay. (1s) */
+  /** Input delay. (1s) */
   inputDelay?: number,
-  /** output rate. (0.1s) */
+  /** Output rate. (0.1s) */
   outputRate?: number,
-  /** output delay. (0.1s) */
+  /** Output delay. (0.1s) */
   outputDelay?: number,
-  /** initial delay. (0s) */
+  /** Initial delay. (0s) */
   delay?: number
 };

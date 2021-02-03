@@ -6,7 +6,7 @@ import * as path from 'path';
 import type {RecOptions, callbackFn} from './_types';
 
 /**
- * Record terminal session.
+ * Records terminal session.
  * @param f output filename
  * @param o options
  * @param o.input input javascript file
@@ -15,7 +15,7 @@ import type {RecOptions, callbackFn} from './_types';
  * @param o.overwrite overwrite existing file (true)
  * @param o.command command to record (cat ${input} | node -i)
  * @param o.env environment variables
- * @param o.title file title 
+ * @param o.title file title
  * @param o.idleTimeLimit maximum idle tile
  * @param fn callback function (err, asciicast file)
  * @returns asciicast file (promise)
