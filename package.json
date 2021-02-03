@@ -1,6 +1,6 @@
 {
   "name": "extra-asciinema",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "asciinema is a terminal screen recorder.",
   "main": "index.js",
   "module": "index.mjs",
@@ -9,11 +9,9 @@
     "import": "./index.mjs"
   },
   "scripts": {
-    "einit": "ebuild init",
-    "ecode": "ebuild update --docs false",
-    "eupdate": "ebuild update --asciinema false",
-    "escatter": "ebuild scatter",
-    "test": "exit"
+    "test": "exit",
+    "build": "ebuild export+main+example+wiki+readme --wikiExample=false --asciinema=false",
+    "deploy": "ebuild jsdoc+export+main+meta+example+github+publish"
   },
   "runkitExampleFilename": "example.js",
   "repository": {
@@ -22,16 +20,7 @@
   },
   "keywords": [
     "extra",
-    "asciinema",
-    "cat",
-    "catSync",
-    "rec",
-    "recSync",
-    "retime",
-    "retimeData",
-    "retimeSync",
-    "upload",
-    "uploadSync"
+    "asciinema"
   ],
   "author": "wolfram77@gmail.com",
   "license": "MIT",
