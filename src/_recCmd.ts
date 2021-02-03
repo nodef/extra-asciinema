@@ -1,7 +1,7 @@
-import * as path from 'path';
+import * as path from "path";
 
 function escapePath(p) {
-  return p.replace(/[`$&{}[;|]/g, '');
+  return p.replace(/[`$&{}[;|]/g, "");
 }
 
 function recCmd(f: string, o: any=null): string[] {
@@ -15,18 +15,18 @@ function recCmd(f: string, o: any=null): string[] {
   }
   o.overwrite = true;
   o.yes = true;
-  var args = ['rec'];
+  var args = ["rec"];
   if(f) args.push(f);
-  if(o.stdin) args.push('--stdin');
-  if(o.append) args.push('--append');
-  if(o.raw) args.push('--raw');
-  if(o.overwrite) args.push('--overwrite');
-  if(o.command) args.push('--command', o.command);
-  if(o.env) args.push('-env', o.env);
-  if(o.title) args.push('--title', o.title);
-  if(o.idleTimeLimit) args.push('--idle-time-limit', ''+o.idleTimeLimit);
-  if(o.yes) args.push('--yes');
-  if(o.quiet) args.push('--quiet');
+  if(o.stdin) args.push("--stdin");
+  if(o.append) args.push("--append");
+  if(o.raw) args.push("--raw");
+  if(o.overwrite) args.push("--overwrite");
+  if(o.command) args.push("--command", o.command);
+  if(o.env) args.push("-env", o.env);
+  if(o.title) args.push("--title", o.title);
+  if(o.idleTimeLimit) args.push("--idle-time-limit", ""+o.idleTimeLimit);
+  if(o.yes) args.push("--yes");
+  if(o.quiet) args.push("--quiet");
   return args;
 }
 export default recCmd;

@@ -1,4 +1,4 @@
-import * as cp from 'child_process';
+import * as cp from "child_process";
 
 /**
  * Uploads recorded asciicast to asciinema.org site.
@@ -6,7 +6,7 @@ import * as cp from 'child_process';
  * @returns asciicast URL
  */
 function uploadSync(f: string): string {
-  var stdout = cp.execFileSync('asciinema', ['upload', f], {encoding: 'utf8'});
-  return stdout.replace(/.*?(https?:\S+).*/s, '$1');
+  var stdout = cp.execFileSync("asciinema", ["upload", f], {encoding: "utf8"});
+  return stdout.replace(/.*?(https?:\S+).*/s, "$1");
 }
 export default uploadSync;

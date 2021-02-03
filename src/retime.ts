@@ -1,6 +1,6 @@
-import retimeData from './retimeData';
-import * as fs from 'fs';
-import type {RetimeOptions} from './_types';
+import retimeData from "./retimeData";
+import * as fs from "fs";
+import type {RetimeOptions} from "./_types";
 
 /**
  * Updates time in asciicast file.
@@ -15,7 +15,7 @@ import type {RetimeOptions} from './_types';
  * @returns promise
  */
 async function retime(f: string, o: RetimeOptions=null): Promise<any> {
-  var d = await fs.promises.readFile(f, 'utf8');
+  var d = await fs.promises.readFile(f, "utf8");
   d = retimeData(d, o);
   await fs.promises.writeFile(f, d);
 }

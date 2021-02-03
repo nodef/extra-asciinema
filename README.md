@@ -11,16 +11,16 @@ Methods as separate packages:
 > Stability: Experimental.
 
 ```javascript
-const asciinema = require('extra-asciinema');
-// import * as asciinema from 'extra-asciinema';
+const asciinema = require("extra-asciinema");
+// import * as asciinema from "extra-asciinema";
 
-asciinema.recSync('saved.cast', {input: 'example.js'});
+asciinema.recSync("saved.cast", {input: "example.js"});
 // runs example.js interactively in node.js, saves "saved.cast"
 
-asciinema.retimeSync('saved.cast', {inputDelay: 2});
+asciinema.retimeSync("saved.cast", {inputDelay: 2});
 // "saved.cast" is updated
 
-asciinema.uploadSync('saved.cast');
+asciinema.uploadSync("saved.cast");
 // asciicast URL
 ```
 

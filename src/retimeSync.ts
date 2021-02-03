@@ -1,6 +1,6 @@
-import retimeData from './retimeData';
-import * as fs from 'fs';
-import type {RetimeOptions} from './_types';
+import retimeData from "./retimeData";
+import * as fs from "fs";
+import type {RetimeOptions} from "./_types";
 
 /**
  * Updates time in asciicast file.
@@ -14,7 +14,7 @@ import type {RetimeOptions} from './_types';
  * @param o.delay initial delay (0s)
  */
 function retimeSync(f: string, o: RetimeOptions=null): void {
-  var d = fs.readFileSync(f, 'utf8');
+  var d = fs.readFileSync(f, "utf8");
   d = retimeData(d, o);
   fs.writeFileSync(f, d);
 }

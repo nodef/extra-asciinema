@@ -1,9 +1,9 @@
-import recCmd from './_recCmd';
-import * as cp from 'child_process';
-import * as fs from 'fs';
-import * as os from 'os';
-import * as path from 'path';
-import type {RecOptions, callbackFn} from './_types';
+import recCmd from "./_recCmd";
+import * as cp from "child_process";
+import * as fs from "fs";
+import * as os from "os";
+import * as path from "path";
+import type {RecOptions, callbackFn} from "./_types";
 
 /**
  * Records terminal session.
@@ -21,9 +21,9 @@ import type {RecOptions, callbackFn} from './_types';
  * @returns asciicast file (promise)
  */
 function rec(f: string=null, o: RecOptions=null, fn: callbackFn=null): Promise<any> {
-  var f = f||path.join(fs.mkdtempSync(path.join(os.tmpdir(), 'asciinema-')), '0.cast');
+  var f = f||path.join(fs.mkdtempSync(path.join(os.tmpdir(), "asciinema-")), "0.cast");
   var p = new Promise((fres, frej) => {
-    cp.execFile('asciinema', recCmd(f, o), {encoding: 'utf8'}, (err) => {
+    cp.execFile("asciinema", recCmd(f, o), {encoding: "utf8"}, (err) => {
       if(err) return frej(err);
       fres(f);
     });

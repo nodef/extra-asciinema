@@ -1,4 +1,4 @@
-import * as cp from 'child_process';
+import * as cp from "child_process";
 
 /**
  * Prints full output of recorded asciicast to a terminal.
@@ -6,6 +6,6 @@ import * as cp from 'child_process';
  * @returns full output (including all escape sequences)
  */
 function catSync(f: string): string {
-  return cp.execFileSync('asciinema', ['cat', f], {encoding: 'utf8'});
+  return cp.execFileSync("asciinema", ["cat", f], {encoding: "utf8"});
 }
 export default catSync;
