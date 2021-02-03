@@ -1,4 +1,12 @@
-[asciinema] is a terminal screen recorder. [:running:] [:package:] [:moon:] [:ledger:]
+[asciinema] is a terminal screen recorder.<br>
+:package: [NPM](https://www.npmjs.com/package/extra-asciinema),
+:smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-asciinema),
+:running: [RunKit](https://npm.runkit.com/extra-asciinema),
+:vhs: [Asciinema](undefined),
+:moon: [Minified](https://www.npmjs.com/package/extra-asciinema.min),
+:scroll: [Files](https://unpkg.com/extra-asciinema/),
+:newspaper: [JSDoc](https://nodef.github.io/extra-asciinema/),
+:blue_book: [Wiki](https://github.com/nodef/extra-asciinema/wiki/).
 
 With this package you can **auto-generate** terminal recordings
 for Node.js examples through **asciinema** *programmatically*.
@@ -32,12 +40,12 @@ asciinema.uploadSync("saved.cast");
 
 ## Index
 
-| Method   | Action                                                 |
-| -------- | ------------------------------------------------------ |
-| [rec]    | Record terminal session.                               |
-| [cat]    | Print full output of recorded asciicast to a terminal. |
-| [retime] | Updates time in asciicast file.                        |
-| [upload] | Upload recorded asciicast to asciinema.org site.       |
+| Method   | Action                                                  |
+| -------- | ------------------------------------------------------- |
+| [rec]    | Records terminal session.                               |
+| [cat]    | Prints full output of recorded asciicast to a terminal. |
+| [retime] | Updates time in asciicast file.                         |
+| [upload] | Uploads recorded asciicast to asciinema.org site.       |
 
 <br>
 <br>
@@ -53,7 +61,4 @@ asciinema.uploadSync("saved.cast");
 [cat]: https://github.com/nodef/extra-asciinema/wiki/cat
 [retime]: https://github.com/nodef/extra-asciinema/wiki/retime
 [upload]: https://github.com/nodef/extra-asciinema/wiki/upload
-[:running:]: https://npm.runkit.com/extra-asciinema
-[:package:]: https://www.npmjs.com/package/extra-asciinema
-[:moon:]: https://www.npmjs.com/package/extra-asciinema.min
 [:ledger:]: https://unpkg.com/extra-asciinema/
