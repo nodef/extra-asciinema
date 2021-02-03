@@ -10,6 +10,8 @@ Methods as separate packages:
 
 > Stability: Experimental.
 
+<br>
+
 ```javascript
 const asciinema = require("extra-asciinema");
 // import * as asciinema from "extra-asciinema";
@@ -24,18 +26,23 @@ asciinema.uploadSync("saved.cast");
 // asciicast URL
 ```
 
-### reference
-
-| Method                | Action
-|-----------------------|-------
-| [rec]                 | Record terminal session.
-| [cat]                 | Print full output of recorded asciicast to a terminal.
-| [retime]              | Updates time in asciicast file.
-| [upload]              | Upload recorded asciicast to asciinema.org site.
-
+<br>
 <br>
 
-[![nodef](https://merferry.glitch.me/card/extra-asciinema.svg)](https://nodef.github.io)
+
+## Index
+
+| Method   | Action                                                 |
+| -------- | ------------------------------------------------------ |
+| [rec]    | Record terminal session.                               |
+| [cat]    | Print full output of recorded asciicast to a terminal. |
+| [retime] | Updates time in asciicast file.                        |
+| [upload] | Upload recorded asciicast to asciinema.org site.       |
+
+<br>
+<br>
+
+[![](https://img.youtube.com/vi/rjDX5ItsOnQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=rjDX5ItsOnQ)
 
 [asciinema]: https://asciinema.org
 [browserify]: https://www.npmjs.com/package/browserify
