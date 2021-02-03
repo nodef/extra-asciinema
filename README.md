@@ -2,7 +2,6 @@
 :package: [NPM](https://www.npmjs.com/package/extra-asciinema),
 :smiley_cat: [GitHub](https://github.com/orgs/nodef/packages?repo_name=extra-asciinema),
 :running: [RunKit](https://npm.runkit.com/extra-asciinema),
-:vhs: [Asciinema](undefined),
 :moon: [Minified](https://www.npmjs.com/package/extra-asciinema.min),
 :scroll: [Files](https://unpkg.com/extra-asciinema/),
 :newspaper: [JSDoc](https://nodef.github.io/extra-asciinema/),
