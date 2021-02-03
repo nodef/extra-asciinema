@@ -1,0 +1,475 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>extra-asciinema</title>
+	<meta name="description" content="Documentation for extra-asciinema">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">extra-asciinema</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>extra-asciinema</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function"><a href="modules.html#cat" class="tsd-kind-icon">cat</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#catsync" class="tsd-kind-icon">cat<wbr>Sync</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#rec" class="tsd-kind-icon">rec</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#recsync" class="tsd-kind-icon">rec<wbr>Sync</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#retime" class="tsd-kind-icon">retime</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#retimedata" class="tsd-kind-icon">retime<wbr>Data</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#retimesync" class="tsd-kind-icon">retime<wbr>Sync</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#upload" class="tsd-kind-icon">upload</a></li>
+								<li class="tsd-kind-function"><a href="modules.html#uploadsync" class="tsd-kind-icon">upload<wbr>Sync</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="cat" class="tsd-anchor"></a>
+					<h3>cat</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">cat<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/cat.ts#L10">cat.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Prints full output of recorded asciicast to a terminal.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>callback (err, full output)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>full output (including all escape sequences)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="catsync" class="tsd-anchor"></a>
+					<h3>cat<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">cat<wbr>Sync<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/catSync.ts#L8">catSync.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Prints full output of recorded asciicast to a terminal.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>full output (including all escape sequences)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="rec" class="tsd-anchor"></a>
+					<h3>rec</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">rec<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, o<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RecOptions</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/rec.ts#L23">rec.ts:23</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Records terminal session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>output filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>o: <span class="tsd-signature-type">RecOptions</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>callback function (err, asciicast file)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>asciicast file (promise)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="recsync" class="tsd-anchor"></a>
+					<h3>rec<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">rec<wbr>Sync<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, o<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RecOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/recSync.ts#L22">recSync.ts:22</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Records terminal session.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>output filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>o: <span class="tsd-signature-type">RecOptions</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>asciicast file</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="retime" class="tsd-anchor"></a>
+					<h3>retime</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">retime<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, o<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/retime.ts#L17">retime.ts:17</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates time in asciicast file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>o: <span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>promise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="retimedata" class="tsd-anchor"></a>
+					<h3>retime<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">retime<wbr>Data<span class="tsd-signature-symbol">(</span>d<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, o<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/retimeData.ts#L15">retimeData.ts:15</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates time in asciicast data.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>d: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>asciicast data</p>
+									</div>
+								</li>
+								<li>
+									<h5>o: <span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>updated asciicast data</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="retimesync" class="tsd-anchor"></a>
+					<h3>retime<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">retime<wbr>Sync<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, o<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/retimeSync.ts#L16">retimeSync.ts:16</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Updates time in asciicast file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>o: <span class="tsd-signature-type">RetimeOptions</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>options</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="upload" class="tsd-anchor"></a>
+					<h3>upload</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">upload<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, fn<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/upload.ts#L10">upload.ts:10</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Uploads recorded asciicast to asciinema.org site.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+								<li>
+									<h5>fn: <span class="tsd-signature-type">callbackFn</span><span class="tsd-signature-symbol"> = null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>callback (err, asciicast URL)</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>asciicast URL (promise)</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="uploadsync" class="tsd-anchor"></a>
+					<h3>upload<wbr>Sync</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">upload<wbr>Sync<span class="tsd-signature-symbol">(</span>f<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/nodef/extra-asciinema/blob/13c7feb/src/uploadSync.ts#L8">uploadSync.ts:8</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Uploads recorded asciicast to asciinema.org site.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>f: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>filename</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>asciicast URL</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="current ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#cat" class="tsd-kind-icon">cat</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#catsync" class="tsd-kind-icon">cat<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#rec" class="tsd-kind-icon">rec</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#recsync" class="tsd-kind-icon">rec<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#retime" class="tsd-kind-icon">retime</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#retimedata" class="tsd-kind-icon">retime<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#retimesync" class="tsd-kind-icon">retime<wbr>Sync</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#upload" class="tsd-kind-icon">upload</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#uploadsync" class="tsd-kind-icon">upload<wbr>Sync</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
