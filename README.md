@@ -11,10 +11,6 @@ With this package you can **auto-generate** terminal recordings
 for Node.js examples through **asciinema** *programmatically*.
 But you need to [install asciinema first]!
 
-Methods as separate packages:
-- `@extra-asciinema/rec`: use [rollup] to bundle this es module.
-- `@extra-asciinema/rec.min`: use in browser ([browserify], [uglify-js]).
-
 > Stability: Experimental.
 
 <br>
