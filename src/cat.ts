@@ -2,7 +2,7 @@ import * as cp from "child_process";
 import type {callbackFn} from "./_types";
 
 /**
- * Prints full output of recorded asciicast to a terminal.
+ * Print full output of recorded asciicast to a terminal.
  * @param f filename
  * @param fn callback (err, full output)
  * @returns full output (including all escape sequences)

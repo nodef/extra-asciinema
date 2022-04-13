@@ -2,7 +2,7 @@ import * as cp from "child_process";
 import type {callbackFn} from "./_types";
 
 /**
- * Uploads recorded asciicast to asciinema.org site.
+ * Upload recorded asciicast to asciinema.org site.
  * @param f filename
  * @param fn callback (err, asciicast URL)
  * @returns asciicast URL (promise)

@@ -1,7 +1,7 @@
 import * as cp from "child_process";
 
 /**
- * Prints full output of recorded asciicast to a terminal.
+ * Print full output of recorded asciicast to a terminal.
  * @param f filename
  * @returns full output (including all escape sequences)
  */

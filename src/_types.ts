@@ -1,4 +1,4 @@
-export type callbackFn = (err: any, ans?: any) => void;
+export type Callback = (err: any, ans?: any) => void;
 
 export interface RecOptions {
   /** Input javascript file. */

@@ -1,15 +1,9 @@
 import type {RetimeOptions} from "./_types";
 
 /**
- * Updates time in asciicast data.
+ * Update time in asciicast data.
  * @param d asciicast data
  * @param o options
- * @param o.input input text
- * @param o.inputRate input rate (0.1s)
- * @param o.inputDelay input delay (1s)
- * @param o.outputRate output rate (0.1s)
- * @param o.outputDelay output delay (0.1s)
- * @param o.delay initial delay (0s)
  * @returns updated asciicast data
  */
 function retimeData(d: string, o: RetimeOptions=null): string {

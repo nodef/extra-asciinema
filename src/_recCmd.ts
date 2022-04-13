@@ -1,6 +1,6 @@
 import * as path from "path";
 
-function escapePath(p) {
+function escapePath(p: string): string {
   return p.replace(/[`$&{}[;|]/g, "");
 }
 

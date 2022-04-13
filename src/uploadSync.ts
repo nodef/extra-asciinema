@@ -1,7 +1,7 @@
 import * as cp from "child_process";
 
 /**
- * Uploads recorded asciicast to asciinema.org site.
+ * Upload recorded asciicast to asciinema.org site.
  * @param f filename
  * @returns asciicast URL
  */
