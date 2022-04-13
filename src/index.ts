@@ -1,7 +1,7 @@
-export {default as cat} from "./cat";
-export {default as catSync} from "./catSync";
 export {default as rec} from "./rec";
 export {default as recSync} from "./recSync";
+export {default as cat} from "./cat";
+export {default as catSync} from "./catSync";
 export {default as retime} from "./retime";
 export {default as retimeData} from "./retimeData";
 export {default as retimeSync} from "./retimeSync";

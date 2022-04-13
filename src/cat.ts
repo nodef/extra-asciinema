@@ -1,5 +1,5 @@
 import * as cp from "child_process";
-import type {callbackFn} from "./_types";
+import type {Callback} from "./_types";
 
 /**
  * Print full output of recorded asciicast to a terminal.
@@ -7,7 +7,7 @@ import type {callbackFn} from "./_types";
  * @param fn callback (err, full output)
  * @returns full output (including all escape sequences)
  */
-function cat(f: string, fn: callbackFn=null): Promise<any> {
+function cat(f: string, fn: Callback=null): Promise<any> {
   var p = new Promise((fres, frej) => {
     cp.execFile("asciinema", ["cat", f], {encoding: "utf8"}, (err, stdout) => {
       if(err) return frej(err);
