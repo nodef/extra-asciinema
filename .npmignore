@@ -1,5 +1,7 @@
 # Source only
 .gitmodules
+.github/
+.docs/
 src/
 data/
 wiki/
@@ -8,8 +10,10 @@ TODO
 
 # Build
 .build/
+coverage/
 .travis.yml
 .coveralls.yml
 tsconfig.json
 jestconfig.json
 rollup.config.js
+build.js

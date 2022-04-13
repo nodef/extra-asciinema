@@ -1,7 +1,8 @@
 {
   "name": "extra-asciinema",
-  "version": "1.0.36",
+  "version": "1.0.37",
   "description": "asciinema is a terminal screen recorder.",
+  "sideEffects": false,
   "main": "index.js",
   "module": "index.mjs",
   "exports": {
@@ -10,13 +11,8 @@
   },
   "scripts": {
     "test": "exit",
-    "build": "ebuild export+main+example+wiki+readme --wikiExample=false --asciinema=false",
-    "deploy": "ebuild jsdoc+export+main+meta+example+github+publish"
-  },
-  "runkitExampleFilename": "example.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nodef/extra-asciinema.git"
+    "build": "node ./build",
+    "deploy": "node ./build deploy"
   },
   "keywords": [
     "extra",
@@ -24,11 +20,20 @@
   ],
   "author": "wolfram77@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/extra-asciinema.git"
+  },
   "bugs": {
     "url": "https://github.com/nodef/extra-asciinema/issues"
   },
   "homepage": "https://github.com/nodef/extra-asciinema#readme",
   "devDependencies": {
-    "extra-build": "^1.4.7"
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-node-resolve": "^13.2.0",
+    "@types/node": "^17.0.23",
+    "extra-build": "^2.0.31",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-dts": "^4.2.1"
   }
 }
