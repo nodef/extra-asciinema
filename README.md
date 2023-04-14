@@ -54,7 +54,18 @@ asciinema.uploadSync('saved.cast');
 <br>
 <br>
 
-[![](https://img.youtube.com/vi/rjDX5ItsOnQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=rjDX5ItsOnQ)
+
+## References
+
+- [asciinema - Record and share your terminal sessions, the simple way](https://asciinema.org)
+
+<br>
+<br>
+
+
+[![](https://img.youtube.com/vi/rjDX5ItsOnQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=rjDX5ItsOnQ)<br>
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+
 
 [asciinema]: https://asciinema.org
 [install asciinema first]: https://asciinema.org/docs/installation
