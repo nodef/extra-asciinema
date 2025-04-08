@@ -65,7 +65,7 @@ asciinema.uploadSync('saved.cast');
 
 [![](https://img.youtube.com/vi/rjDX5ItsOnQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=rjDX5ItsOnQ)<br>
 [![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
-
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/extra-asciinema)
 
 [asciinema]: https://asciinema.org
 [install asciinema first]: https://asciinema.org/docs/installation
